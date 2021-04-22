@@ -1,0 +1,176 @@
+/* 
+font-family: 'B612', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Noto Serif', serif; 
+*/
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    background-color: rgb(68, 68, 68);
+    background-image: url(../img/desktop-backgrund.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.container{
+    margin: auto;
+    padding-top: 60px;
+    width: 100vw;
+    /* background-color: bisque; */
+    max-width: 1700px;
+/* TODO--------------------------------------------------------------------- */
+    color: white;
+    gap: 20px;
+    border-radius: 0px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0, 0.148);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 0px rgba(255,255,255,0.4) solid;
+    border-bottom: 0px rgba(40,40,40,0.35) solid;
+    border-right: 0px rgba(40,40,40,0.35) solid;
+}
+.container h1{
+    text-align: center;
+}
+#description{
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+#survey-form{
+    margin-top: 40px;
+    margin: auto;
+    /* background-color: rgb(255, 255, 255); */
+    width: 70%;
+    padding: 40px 100px 40px 100px;
+    max-width: 1;
+/* TODO---------------------------------------------------------------- */
+    /* background: rgba( 10, 0, 0, 0.30 );
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 17.0px );
+    -webkit-backdrop-filter: blur( 17.0px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+.form-group{
+    margin-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 7px;
+}
+p{
+    margin-bottom: 7px;
+}
+.form-control{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.575);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 70px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+}
+input, select, textarea{
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+::placeholder{
+    font-size: 16px;
+    color: black;
+}
+textarea{
+    resize: none;
+    height: 200px;
+    width: 100%;
+}
+button{
+    width: 50%;
+    margin: 0 25% 0 25%;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1185px) {
+    
+    .container{
+        margin: 0;
+        width: 100%;
+        padding: 40px 0px 0 0px ;
+    }
+    .form-control{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+    
+    #survey-form{
+        width: 100%;
+        padding: 40px 75px 40px 75px;
+    }
+    .form-control{
+        font-size: 15px;
+    }
+    .container{
+        padding: 40px 40px 0 40px;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    
+    .container{
+        padding: 40px 20px 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    
+    .form-control{
+        padding: 8px;
+        font-size: 14px;
+    }
+    .form-group{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+    #survey-form{
+        padding: 40px 60px 40px 60px;
+    }
+    .container{
+        padding: 40px 0 0 0 ;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .container{
+        min-width: 400px;
+    }
+
+}
+/* https://www.w3schools.com/css/css_form.asp#:~:text=Styling%20Input%20Fields&text=If%20you%20only%20want%20to,will%20only%20select%20number%20fields
+https://www.w3schools.com/css/tryit.asp?filename=trycss_form_icon */

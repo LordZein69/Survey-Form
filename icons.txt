@@ -1,0 +1,17 @@
+<i class="fas fa-undo"></i>
+<i class="far fa-envelope"></i>
+<i class="far fa-user-circle"></i>
+<i class="fas fa-check"></i>
+
+
+Front-end Projects
+Back-end Projects
+Data Visualization
+Challenges
+Open Source Community
+Gitter help rooms
+Videos
+City Meetups
+Wiki
+Forum
+Additional Course
