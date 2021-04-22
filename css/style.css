@@ -13,8 +13,12 @@ font-family: 'Noto Serif', serif;
     box-sizing: border-box;
     text-transform: capitalize;
     font-family: 'Bitter', serif;
-    font-size: 16px;
+    font-size: 18px;
     overflow-x: hidden;
+}
+::selection{
+    color: ivory;
+    background-color: rgb(48, 48, 48);
 }
 body{
     height: 100vh;
@@ -44,6 +48,7 @@ body{
 }
 .container h1{
     text-align: center;
+    font-size: 36px;
 }
 #description{
     text-align: center;
@@ -66,16 +71,31 @@ body{
     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 .form-group{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 label{
     display: block;
     margin-bottom: 7px;
+    user-select: none;
+    cursor: pointer;
+}
+input[type=checkbox]{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type=radio]{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
 }
 p{
-    margin-bottom: 7px;
+    /* margin-bottom: 7px; */
+    user-select: none;
+    cursor: pointer;
 }
 .form-control{
     width: 100%;
@@ -84,12 +104,16 @@ p{
     backdrop-filter: blur( 70px );
     -webkit-backdrop-filter: blur( 20.0px );
     border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+}
+input:focus, select:focus, textarea:focus{
     border: 1px solid rgb(255, 255, 255);
+    outline: none;
 }
 input, select, textarea{
     border-color: black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
 }
 ::placeholder{
     font-size: 16px;
@@ -104,8 +128,21 @@ button{
     width: 50%;
     margin: 0 25% 0 25%;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #FFF, 
+                0 0 10px #FFF, 
+                0 0 15px #FFF;
     cursor: pointer;
+    user-select: none;
+    border: none;
+    font-size: 20px;
+    background: rgba(184, 184, 184, 0.575);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 70px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
 }
 @media screen and (max-width: 1185px) {
     
@@ -124,7 +161,7 @@ button{
     
     #survey-form{
         width: 100%;
-        padding: 40px 75px 40px 75px;
+        padding: 40px 50px 40px 50px;
     }
     .form-control{
         font-size: 15px;
@@ -145,8 +182,11 @@ button{
 
 @media screen and (max-width: 590px) {
     
+    #title{
+        font-size: 26px;
+    }
     .form-control{
-        padding: 8px;
+        padding: 10px 18px 10px 18px;
         font-size: 14px;
     }
     .form-group{
@@ -157,7 +197,7 @@ button{
         font-size: 14px;
     }
     #survey-form{
-        padding: 40px 60px 40px 60px;
+        padding: 40px 40px 40px 40px;
     }
     .container{
         padding: 40px 0 0 0 ;

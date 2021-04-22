@@ -24,43 +24,45 @@
         <form id="survey-form" action="https://github.com/LordZein69">
             <div class="form-group">
                 <label id="name-label" for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="enter your name here....." required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="enter your name here....."
+                    required>
             </div>
             <div class="form-group">
                 <label id="email-label" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="enter your email here....."
-                    required>
+                <input type="email" name="email" id="email" class="form-control"
+                    placeholder="enter your email here....." required>
             </div>
             <div class="form-group">
                 <label id="number-label" for="age">Age</label>
-                <input id="number" type="number" name="age" min="1" max="100" class="form-control" placeholder="Age here....."
-                    required>
+                <input id="age" type="number" name="age" min="1" max="100" class="form-control"
+                    placeholder="Age here....." required>
             </div>
             <div class="form-group">
-                <p>Sementara</p>
-                <select name="role" id="dropdown" class="form-control" required>
-                    <option value="disabled" disabled selected>Select current role</option>
-                    <option value="Student">Student</option>
-                    <option value="Job">Full Time Job</option>
-                    <option value="Learner">Full Time Learner</option>
-                    <option value="prefer no">Prefer Not To Say</option>
-                    <option value="other">other</option>
-                </select>
+                <label for="dropdown">Sementara</label>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option value="disabled" disabled selected>Select current role</option>
+                        <option value="Student">Student</option>
+                        <option value="Job">Full Time Job</option>
+                        <option value="Learner">Full Time Learner</option>
+                        <option value="prefer no">Prefer Not To Say</option>
+                        <option value="other">other</option>
+                    </select>
             </div>
             <div class="form-group">
                 <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label for="">
-                    <input name="user-recomend" type="radio" class="input-radio" value="Definitely" >Definitely
+                <label for="definitely">
+                    <input id="definitely" name="user-recomend" type="radio" class="input-radio"
+                        value="Definitely">Definitely
                 </label>
-                <label for="">
-                    <input name="user-recomend" type="radio" class="input-radio" value="Maybe">Maybe
+                <label for="maybe">
+                    <input id="maybe" name="user-recomend" type="radio" class="input-radio" value="Maybe">Maybe
                 </label>
-                <label for="">
-                    <input name="user-recomend" type="radio" class="input-radio" value="Not sure">Not sure
+                <label for="not sure">
+                    <input id="not sure" name="user-recomend" type="radio" class="input-radio" value="Not sure">Not sure
                 </label>
             </div>
             <div class="form-group">
-                <p>What is your favorite feature of freeCodeCamp?</p>
+                <label for="most-like">What is your favorite feature of freeCodeCamp?</label>
                 <select name="most-like" id="most-like" class="form-control" required>
                     <option value="disabled" disabled selected>Select an option</option>
                     <option value="Challenges">Challenges</option>
@@ -72,26 +74,31 @@
             </div>
             <div class="form-group">
                 <p>What would you like to see improved? (Check all that apply)</p>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Front-end Projects" class="input-checkbox">Front-end Projects
+                <label for="front-end projects">
+                    <input id="front-end projects" type="checkbox" name="prefer" value="Front-end Projects" class="input-checkbox">Front-end
+                    Projects
                 </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Back-end Projects" class="input-checkbox">Back-end Projects
+                <label for="back-end projects">
+                    <input id="back-end projects" type="checkbox" name="prefer" value="Back-end Projects" class="input-checkbox">Back-end
+                    Projects
                 </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Data Visualization" class="input-checkbox">Data Visualization
+                <label for="data visualization">
+                    <input id="data visualization" type="checkbox" name="prefer" value="Data Visualization" class="input-checkbox">Data
+                    Visualization
                 </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Open Source Community" class="input-checkbox">Open Source Community
+                <label for="open source community">
+                    <input id="open source community" type="checkbox" name="prefer" value="Open Source Community" class="input-checkbox">Open
+                    Source Community
                 </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Challenges" class="input-checkbox">Challenges
+                <label for="challenges">
+                    <input id="challenges" type="checkbox" name="prefer" value="Challenges" class="input-checkbox">Challenges
                 </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Gitter help rooms" class="input-checkbox">Gitter help rooms
+                <label for="gitter help rooms">
+                    <input id="gitter help rooms" type="checkbox" name="prefer" value="Gitter help rooms" class="input-checkbox">Gitter help
+                    rooms
                 </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" value="Forum" class="input-checkbox">Forum
+                <label for="forum">
+                    <input id="forum" type="checkbox" name="prefer" value="Forum" class="input-checkbox">Forum
                 </label>
             </div>
             <div class="form-group">
