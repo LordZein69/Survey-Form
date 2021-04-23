@@ -197,7 +197,7 @@ button{
         font-size: 14px;
     }
     #survey-form{
-        padding: 40px 40px 40px 40px;
+        padding: 40px 6px 40px 6px;
     }
     .container{
         padding: 40px 0 0 0 ;
@@ -208,7 +208,7 @@ button{
 @media screen and (max-width: 400px) {
     
     .container{
-        min-width: 400px;
+        min-width: 300px;
     }
 
 }
