@@ -61,7 +61,6 @@ body{
     /* background-color: rgb(255, 255, 255); */
     width: 70%;
     padding: 40px 100px 40px 100px;
-    max-width: 1;
 /* TODO---------------------------------------------------------------- */
     /* background: rgba( 10, 0, 0, 0.30 );
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.37);
@@ -183,7 +182,7 @@ button{
 @media screen and (max-width: 590px) {
     
     #title{
-        font-size: 26px;
+        font-size: 25px;
     }
     .form-control{
         padding: 10px 18px 10px 18px;
@@ -207,8 +206,11 @@ button{
 
 @media screen and (max-width: 400px) {
     
-    .container{
-        /* min-width: 300px; */
+    #title{
+        font-size: 20px;
+    }
+    .form-control{
+        font-size: 10px;
     }
 
 }
