@@ -208,7 +208,7 @@ button{
 @media screen and (max-width: 400px) {
     
     .container{
-        min-width: 300px;
+        /* min-width: 300px; */
     }
 
 }
